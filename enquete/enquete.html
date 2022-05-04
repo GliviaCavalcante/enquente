@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquete</title>
+    <style>
+     .B1{
+     background-color:   rgb(90, 141, 236);
+     font-size: 25px;
+     border-radius: 8px;
+     color: white;
+     }
+     .B2{
+         background-color: rgb(17, 54, 158);
+         font-size: 25px;
+     border-radius: 8px;
+     color: white;
+        }
+     .tit{
+         background-color: rgb(17, 17, 99);
+         width: 400px;
+         height: 400px;
+         color: white;
+         text-align:center;
+         border-radius: 500px;
+         text-decoration: solid;
+         font-size: 40px;
+         border-style: ridge;
+     }
+      
+.barra1 {
+  width: 1%;
+  height: 15px;
+  background-color: rgb(90, 141, 236);
+  color: white;
+  border-radius: 20px;
+  
+}
+.barra2 {
+  width: 1%;
+  height: 15px;
+  background-color: rgb(17, 54, 158);
+  color: white;
+  border-radius: 20px;
+}
+body{
+    background: skyblue;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <center><h4 class="tit"><br><br><br>Hardware é melhor <br> que Software?</h4></center>
+    </div>
+    <center>
+        <div>
+           <h3><button onclick="barrinha('Sim')" class="B1" id="sim">sim</button>
+            <button onclick="barrinha('Nao')" class="B2" id="nao">não</button></h3>
+        </div>
+        <h3>respostas:</h3>
+        <h3>sim:</h3>
+        <div class="barra1" id="S">0</div>
+        <h3>nao:</h3>
+        <div class="barra2" id="N">0</div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
